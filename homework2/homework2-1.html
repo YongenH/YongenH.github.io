@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+		/* ID */
+		#Header{ 
+			color: white;
+			background: darkgreen;
+			padding: 15px;
+			font-weight: bold;
+		}
+		/* Class */
+		.input{ 
+			color: yellowgreen;
+		}
+		.response{
+			color: olive;
+		}
+		span{
+			font-family: fantasy;
+			font-size: 12pt;
+			color: inherit;  /* inherits */
+		}
+		/* conflict */
+		label em{ 
+			text-decoration: underline;
+		}
+		form em{
+			text-decoration: line-through;
+		}
+	</style>
+
+</head>
+<body>
+	<h1 id="Header">Lab2: Go through exercise1/2</h1>
+
+	<!--inherits: span-->
+	<label class="input"><span>Color:</span>
+		<input type = "color" autofocus />
+			<!--conflict: em-->
+			<em>(Hexadicimal code such as #ADD8E6)</em>
+	</label><br>
+
+	<label class="input" for ="date"><span>Date:</span></label>
+	<input type = "date" >
+
+	<form class="input"><span>Email:</span>
+		<input type="email" placeholder="name@domail.com" required>
+		<!--conflict: em-->
+		<em>(name@domail.com)</em>
+	</form>
+
+	<label class="input" for ="number"><span>Number:</span>
+	<input type ="number" name="number" min="0" max="7">
+		<!--conflict: em-->
+		<em>(Enter a number between 0 and 7)</em>
+	</label>
+	<!--inherits: span-->
+	<p class="response"><span>Say somthing: ...</span></p>
+
+</body>
+</html>
