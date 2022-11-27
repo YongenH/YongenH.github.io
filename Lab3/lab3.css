@@ -1,0 +1,42 @@
+body{
+	padding: 200pt;
+	padding-left: 20pt;
+	padding-top: 20pt;
+	font-family: serif;
+	color: white;
+	background-color: lightgoldenrodyellow;
+	font-weight: bold;
+	}
+nav{
+	width: 15em;
+	border: 2px solid lightcoral;
+	text-align: center;
+	background-color: lightcoral;
+	}
+nav ul{	position: relative;
+	top: 0px;
+	left: 0px;
+	width: 15em;
+	margin: 0;
+	list-style: none;
+	padding: 0;
+	display: none;
+	}
+nav:hover ul{ display: block;}
+nav li{
+	margin: 0;
+	border-top: 2px solid lightcoral;
+	background-color: antiquewhite;
+	padding:10pt;
+	width: 160pt;
+	border-right: medium;
+	}
+@media screen and (min-width: 500pt){
+	body{
+		background-color: skyblue;
+	}
+}
+
+
+
+
