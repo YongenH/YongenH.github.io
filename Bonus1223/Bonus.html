@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<script>
+		sentence = window.prompt("input data");
+		char = window.prompt("input a char to search");
+		var text = sentence;
+		var result = text.indexOf(char)+"\n"+text.lastIndexOf(char)+"\n"+text.indexOf(char,3);
+		alert(result);
+		
+
+	</script>
+</body>
+</html>
