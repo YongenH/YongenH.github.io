@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<label>JS Calculator</label>
+
+	<p>Number1</p>
+	<input type="text" id="number1" class="input" name="number1" >
+	
+	<p>Number2</p>
+	<input type="text" id="number2" class="input" name="number2" >
+
+	<p>Operate way?</p>
+	<select id="selected" name="operate">
+		<option value="+">+</option>
+		<option value="-">-</option>
+		<option value="*">*</option>
+		<option value="/">/</option>
+	</select></p>
+
+	<button type="button" id="operateButton" value="operate">Operate</button>
+	<p>Result = <nobr nowrap id="result"></nobr></p>
+	
+
+	<script>
+		
+		document.getElementById("operateButton").onclick = function(){
+			var number1 = parseInt(document.getElementById("number1").value);
+			var number2 = parseInt(document.getElementById("number2").value);
+			var operateValue = document.getElementById("selected").value;
+			if(operateValue=="+"){
+				document.getElementById("result").textContent = number1+number2;
+			}else if(operateValue=="-"){
+				document.getElementById("result").textContent = number1-number2;
+			}else if(operateValue=="*"){
+				document.getElementById("result").textContent = number1*number2;
+			}else if(operateValue=="/"){
+				document.getElementById("result").textContent = number1/number2;
+			}
+		}
+
+	</script>
+
+</body>
+</html>
